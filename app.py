@@ -3,7 +3,9 @@ Streamlit Cheat Sheet
 App to summarise streamlit docs v0.71.0 for quick reference
 There is also an accompanying png version
 https://github.com/daniellewisDL/streamlit-cheat-sheet
-v0.71.0 November 2020 Daniel Lewis and Austin Chen
+Cheatsheet was updated from
+https://github.com/FJSam/streamlit-cheat-sheet/blob/master/streamlit_cheatsheet_with%20caching_lesson.PNG
+I added in the Cached Object Mutated Warning as a lesson learnt
 """
 
 import streamlit as st
@@ -259,6 +261,22 @@ DeltaGenerator.add_rows(data)
 >>> d3 = foo(ref2)
     ''')
 
+    with col3.beta_expander("Cached Object Mutated Warning"):
+        st.write("""
+            By default Streamlit expects its cached values to be treated as immutable. 
+            In instances where the function output is a mutable object 
+            (e.g a JSON object which always contains the same data)
+            allow_output_mutation should be set to true to enable caching of the mutable object 
+            without streamlit showing a Cached Object Mutated warning
+            if allow_output_mutation=False, the hash key-value pair of the function output (mutable data)
+            will always change in each run therefore not caching the output
+            """)
+        st.code('''>>> @st.cache(allow_output_mutation=True)
+... def advanced_foo(bar):
+...     # Mutate bar
+... return mutable data
+''')
+     
     return None
 
 # Run main()
