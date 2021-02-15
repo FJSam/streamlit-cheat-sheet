@@ -3,7 +3,6 @@
 # streamlit-cheat-sheet
 A cheat sheet for Streamlit
 v0.71.0 (versions now aligned to Streamlit versioning)
-Updated from https://github.com/daniellewisDL/streamlit-cheat-sheet
 
 # Versioning
 * Based on Streamlit 0.71.0
