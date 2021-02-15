@@ -3,6 +3,7 @@
 # streamlit-cheat-sheet
 A cheat sheet for Streamlit
 v0.71.0 (versions now aligned to Streamlit versioning)
+Updated from https://github.com/daniellewisDL/streamlit-cheat-sheet
 
 # Versioning
 * Based on Streamlit 0.71.0
@@ -17,4 +18,4 @@ A clean venv with just pip and then Streamlit
 [Streamlit Cheat Sheet - Heroku](https://streamlit-cheat-sheet.herokuapp.com/)
 
 # Show me
-![Streamlit Cheat Sheet](https://github.com/daniellewisDL/streamlit-cheat-sheet/blob/master/streamlit-cheat-sheet.png)
+![Streamlit Cheat Sheet](https://github.com/FJSam/streamlit-cheat-sheet/blob/master/streamlit_cheatsheet_with%20caching_lesson.PNG)
